@@ -36,7 +36,7 @@ void loop() {
   Serial.println(mappedValueY);
 
   // Right Stick Up == L2
-  if (mappedValueY < 60) {
+  if (mappedValueY < 50) {
     pinMode(A2, OUTPUT);
     digitalWrite(A2, LOW);
   } else {
@@ -44,7 +44,7 @@ void loop() {
   }
 
   // Right Stick Down == L1
-  if (mappedValueY > 80) {
+  if (mappedValueY > 90) {
     pinMode(A3, OUTPUT);
     digitalWrite(A3, HIGH);
   } else {
