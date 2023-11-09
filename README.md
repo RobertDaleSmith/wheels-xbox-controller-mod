@@ -58,6 +58,14 @@ The firmware simply loops over and over checking the Right Ananlog stick's Y-axi
 
 One significant challenge was managing the Left Bumper button signal. Initially, the microcontroller couldn't sink the current from the button's signal line. The successful solution was implementing an external pull-down setup using a 2N5551 NPN transistor.
 
+## USB Wire Locking Mechanism
+
+The ability to lock the USB cable into place and prevent accidental removals was also requested for this project. So the Wire Lock Block was created:
+
+[printables.com/model/641099-controller-wire-lock-block-xbox-one-s](https://www.printables.com/model/641099-controller-wire-lock-block-xbox-one-s)
+
+Custom Wheels back plate model for this is included here as well.
+
 ## Future Improvements
 
 This example code can be expanded to trigger on the X-axis or even at diagonal directions. In the future both ananlog sticks could be sniffed and trigger multiple buttons depending on your specific needs.
